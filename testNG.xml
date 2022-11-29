@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="OrangeHRM_Maven Project">
+	<test name="OrangeHRM_Maven_Test_AdminValidData">
+		<parameter name="uid" value="admin"></parameter>
+		<parameter name="pwd" value="Qedge123!@#"></parameter>
+		<classes>
+			<class name="com.OrangeHRM.TestCases.AdminLoginValidData"></class>
+		</classes>
+
+	</test>
+	<test name="OrangeHRM_Maven_Test_AdminInValidData">
+		<parameter name="uid" value="admin"></parameter>
+		<parameter name="pwd" value="admin"></parameter>
+		<classes>
+			<class name="com.OrangeHRM.TestCases.AdminLoginInValidData"></class>
+		</classes>
+
+	</test>
+	<test name="OrangeHRM_Maven_Test_CheckEmpModule">
+		<parameter name="uid" value="abdul123"></parameter>
+		<parameter name="pwd" value="Tata@182021"></parameter>
+		<classes>
+			<class name="com.OrangeHRM.TestCases.CheckEmpModule"></class>
+		</classes>
+
+	</test>
+	<test name="OrangeHRM_Maven_Test_EmployeeCreation">
+		<parameter name="uid" value="admin"></parameter>
+		<parameter name="pwd" value="Qedge123!@#"></parameter>
+		<parameter name="fname" value="Heerooo"></parameter>
+		<parameter name="lname" value="Demo1"></parameter>
+
+		<classes>
+			<class name="com.OrangeHRM.TestCases.EmployeeRegistration"></class>
+		</classes>
+
+	</test>
+	<test name="OrangeHRM_Maven_Test_UserCreation">
+		<parameter name="uid" value="admin"></parameter>
+		<parameter name="pwd" value="Qedge123!@#"></parameter>
+		<parameter name="empfullname" value="Heerooo Demo1"></parameter>
+		<parameter name="username" value="Heerooo Demo"></parameter>
+		<parameter name="password" value="Tata@182021"></parameter>
+
+		<classes>
+			<class name="com.OrangeHRM.TestCases.UserRegistration"></class>
+		</classes>
+
+	</test>
+</suite>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [OrangeHRM_Maven Project]">
+  <test thread-count="5" name="OrangeHRM_Maven_Test_UserCreation(failed)">
+    <parameter name="uid" value="admin"/>
+    <parameter name="password" value="Tata@182021"/>
+    <parameter name="empfullname" value="Heroo Demo1"/>
+    <parameter name="pwd" value="Qedge123!@#"/>
+    <parameter name="username" value="Heroo Demo"/>
+    <classes>
+      <class name="com.OrangeHRM.TestCases.UserRegistration">
+        <methods>
+          <include name="userRegCreation" invocation-numbers="0"/>
+          <include name="LunchApplication"/>
+          <include name="CloseAppication"/>
+        </methods>
+      </class> <!-- com.OrangeHRM.TestCases.UserRegistration -->
+    </classes>
+  </test> <!-- OrangeHRM_Maven_Test_UserCreation(failed) -->
+</suite> <!-- Failed suite [OrangeHRM_Maven Project] -->
